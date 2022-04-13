@@ -19,7 +19,7 @@ public class fillingStudentNames
 				{
 					counter++;
 					String name = file.nextLine();
-					studentNames.add(new Student(name, 0, 0, 0);
+					studentNames.add(new Student(name, 0, 0, 0));
 				}
 		}
 		
