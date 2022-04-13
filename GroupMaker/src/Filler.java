@@ -19,7 +19,19 @@ public class Filler
 				fillingStudentNames.studentNames.get(i).setProjectOneGroup(count);
 			}
 		
-		count++;
+		//count++;
+		
+		/*for(int i = 0; i < fillingStudentNames.studentNames.size(); i++)
+			{
+				fillingStudentNames.studentNames.get(i).setProjectOneGroup(count);
+				
+				count++;
+				
+				if(count > 4)
+					{
+						count = 0;
+					}
+			}*/
 			
 			
 	}
