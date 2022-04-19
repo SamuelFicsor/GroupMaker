@@ -6,35 +6,31 @@ public class Filler
 		//then im going to go through each student twice (nested for loop)
 		//it will be on one person then check all other people to see if they have the same numbers
 	
-	public static void makeProjectOneGroups()
-	{
-		ArrayList <Student> group1 = new ArrayList <Student>();
-		
-	
-		int count = 1; 
-	
-		
-		for(int i = 0; i<driver.medianSize; i++)
+		public static void makeProjectOneGroups()
 			{
-				fillingStudentNames.studentNames.get(i).setProjectOneGroup(count);
-			}
-		
-		//count++;
-		
-		/*for(int i = 0; i < fillingStudentNames.studentNames.size(); i++)
-			{
-				fillingStudentNames.studentNames.get(i).setProjectOneGroup(count);
-				
-				count++;
-				
-				if(count > 4)
+				ArrayList <Student> group1 = new ArrayList <Student>();
+				 
+				int count =0;
+			
+				for(int j = 0; j < (fillingStudentNames.studentNames.size()/driver.medianSize); j++)
 					{
-						count = 0;
+		  			for(int i = 0; i < driver.medianSize; i++)
+		  			{
+		  					fillingStudentNames.studentNames.get(count).setProjectOneGroup(j+1);
+		  					count++;
+		  			}
+				
+		  			
 					}
-			}*/
-			
-			
-	}
+				
+				for(Student s: fillingStudentNames.studentNames)
+					{
+						System.out.println(s.getProjectOneGroup());
+						System.out.println(s.getName() + "\n");
+						
+					}
+					
+			}
 
 	
 	}
