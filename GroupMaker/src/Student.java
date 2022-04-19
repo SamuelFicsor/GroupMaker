@@ -6,7 +6,7 @@ public class Student
 	// ArrayList<Integer> groups = new ArrayList<Integer>();
 		int projectOneGroup;
 		int projectTwoGroup;
-		int projectThreeGorup;
+		int projectThreeGroup;
 		
 		public Student(String n, int one, int two, int three)
 		{
@@ -14,7 +14,7 @@ public class Student
 			// groups = g;
 			projectOneGroup = one;
 			projectTwoGroup = two;
-			projectThreeGorup = three;
+			projectThreeGroup = three;
 			
 		}
 
@@ -48,14 +48,14 @@ public class Student
 				this.projectTwoGroup = projectTwoGroup;
 			}
 
-		public int getProjectThreeGorup()
+		public int getProjectThreeGroup()
 			{
-				return projectThreeGorup;
+				return projectThreeGroup;
 			}
 
-		public void setProjectThreeGorup(int projectThreeGorup)
+		public void setProjectThreeGroup(int projectThreeGroup)
 			{
-				this.projectThreeGorup = projectThreeGorup;
+				this.projectThreeGroup = projectThreeGroup;
 			}
 
 //		public ArrayList<Integer> getGroups()

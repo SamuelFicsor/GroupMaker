@@ -22,9 +22,33 @@ public class driver
 				System.out.println("Press enter to generate the groups");
 				enter = stringInput.nextLine();
 				
-				//the method that will generate groups goes here 
-				
+				//the method that will generate groups goes here
 				Filler.makeProjectOneGroups();
+				//printGroups();
 			}
+		
+		
+		public static void printGroups()
+		{
+			int space = 0;
+			
+			System.out.println("Project 1");
+			for(int i = 0; i < fillingStudentNames.studentNames.size(); i++)
+				{
+					System.out.println(fillingStudentNames.studentNames.get(i).getProjectOneGroup() + ". " + fillingStudentNames.studentNames.get(i).getName());
+				}
+			System.out.println();
+			System.out.println("Project 2");
+			for(int i = 0; i < fillingStudentNames.studentNames.size(); i++)
+				{
+					System.out.println(fillingStudentNames.studentNames.get(i).getProjectTwoGroup() + ". " + fillingStudentNames.studentNames.get(i).getName());
+				}
+			System.out.println();
+			System.out.println("Project 3");
+			for(int i = 0; i < fillingStudentNames.studentNames.size(); i++)
+				{
+					System.out.println(fillingStudentNames.studentNames.get(i).getProjectThreeGroup() + ". " + fillingStudentNames.studentNames.get(i).getName());
+				}
+		}
 	}
 
