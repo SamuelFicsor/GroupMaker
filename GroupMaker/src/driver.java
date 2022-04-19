@@ -23,6 +23,8 @@ public class driver
 				enter = stringInput.nextLine();
 				
 				//the method that will generate groups goes here 
+				
+				Filler.makeProjectOneGroups();
 			}
 	}
 
