@@ -3,12 +3,19 @@ import java.util.ArrayList;
 public class Student
 	{
 		String name;
-		ArrayList<Integer> groups = new ArrayList<Integer>();
+	// ArrayList<Integer> groups = new ArrayList<Integer>();
+		int projectOneGroup;
+		int projectTwoGroup;
+		int projectThreeGorup;
 		
-		public Student(String n, ArrayList g)
+		public Student(String n, int one, int two, int three)
 		{
 			name = n;
-			groups = g;
+			// groups = g;
+			projectOneGroup = one;
+			projectTwoGroup = two;
+			projectThreeGorup = three;
+			
 		}
 
 		public String getName()
@@ -21,13 +28,43 @@ public class Student
 				this.name = name;
 			}
 
-		public ArrayList<Integer> getGroups()
+		public int getProjectOneGroup()
 			{
-				return groups;
+				return projectOneGroup;
 			}
 
-		public void setGroups(ArrayList<Integer> groups)
+		public void setProjectOneGroup(int projectOneGroup)
 			{
-				this.groups = groups;
+				this.projectOneGroup = projectOneGroup;
 			}
+
+		public int getProjectTwoGroup()
+			{
+				return projectTwoGroup;
+			}
+
+		public void setProjectTwoGroup(int projectTwoGroup)
+			{
+				this.projectTwoGroup = projectTwoGroup;
+			}
+
+		public int getProjectThreeGorup()
+			{
+				return projectThreeGorup;
+			}
+
+		public void setProjectThreeGorup(int projectThreeGorup)
+			{
+				this.projectThreeGorup = projectThreeGorup;
+			}
+
+//		public ArrayList<Integer> getGroups()
+//			{
+//				return groups;
+//			}
+//
+//		public void setGroups(ArrayList<Integer> groups)
+//			{
+//				this.groups = groups;
+//			}
 	}
