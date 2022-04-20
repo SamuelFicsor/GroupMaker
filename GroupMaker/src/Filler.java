@@ -20,11 +20,11 @@ public class Filler
 		  			}		
 					}
 				
-				for(Student s: fillingStudentNames.studentNames)
-					{
-						System.out.println(s.getProjectOneGroup());
-						System.out.println(s.getName() + "\n");
-					}	
+//				for(Student s: fillingStudentNames.studentNames)
+//					{
+//						System.out.println(s.getProjectOneGroup());
+//						System.out.println(s.getName() + "\n");
+//					}	
 				
 			
 			}
@@ -33,36 +33,36 @@ public class Filler
 			{
 
 				 
-				int count =0;
+				int count = fillingStudentNames.studentNames.size()/driver.medianSize;;
 				
-				int count2  = 0;
+				int count2 = count;
 				
-				int groupCount = fillingStudentNames.studentNames.size()/driver.medianSize;
+				int studentCount  = 0;
+				
+			
 				
 				
-				
-				
-				for(int i =0; i<fillingStudentNames.studentNames.size(); i++)
+				while(studentCount < fillingStudentNames.studentNames.size() )
 					{
-						fillingStudentNames.studentNames.get(groupCount).setProjectTwoGroup(count2);
+						fillingStudentNames.studentNames.get(studentCount).setProjectTwoGroup(count);
 						
-						count ++;
+						count--;
+						studentCount++;
 						
-						if(count == 4)
+						if(count == 0)
 							{
-								count =0;
-								count2++;
-								groupCount--;
+								count = count2;
 							}
+						
 					}
 			
 
 				
-				for(Student s: fillingStudentNames.studentNames)
-					{
-						System.out.println(s.getProjectTwoGroup());
-						System.out.println(s.getName() + "\n");
-					}	
+//				for(Student s: fillingStudentNames.studentNames)
+//					{
+//						System.out.println(s.getProjectTwoGroup());
+//						System.out.println(s.getName() + "\n");
+//					}	
 			}
 		
 		
