@@ -1,15 +1,15 @@
 import java.io.*;
 
-public class FileWriter 
+public class WritingToFile
 	{
-    public static void main(String [] args) throws IOException
+    public static void main(String [] args)
     	{
         // The name of the file to open.
-        String file = "groups.txt";
+        String fileName = "groups.txt";
 
         try {
             // Assume default encoding.
-            FileWriter fileWriter = new FileWriter(file, true);
+            FileWriter fileWriter = new FileWriter(fileName);
 
             // Always wrap FileWriter in BufferedWriter.
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -28,7 +28,7 @@ public class FileWriter
         
         catch(IOException ex) 
         	{
-            System.out.println("Error writing to file '" + file + "'");
+            System.out.println("Error writing to file '" + fileName + "'");
             // Or we could just do this:
             // ex.printStackTrace();
         	}
