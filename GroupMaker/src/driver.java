@@ -26,6 +26,8 @@ public class driver
 				Filler.makeProjectOneGroups();
 
 				System.out.println("\n\n\n");
+				
+				printGroups();
 
 			}
 		
@@ -38,6 +40,12 @@ public class driver
 			for(int i = 0; i < fillingStudentNames.studentNames.size(); i++)
 				{
 					System.out.println(fillingStudentNames.studentNames.get(i).getProjectOneGroup() + ". " + fillingStudentNames.studentNames.get(i).getName());
+					space++;
+					if(space == 3)
+						{
+							System.out.println();
+							space = 0;
+						}
 				}
 			System.out.println();
 			System.out.println("Project 2");

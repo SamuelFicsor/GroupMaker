@@ -2,7 +2,7 @@ import java.io.*;
 
 public class FileWriter 
 	{
-    public static void main(String [] args) 
+    public static void main(String [] args) throws IOException
     	{
         // The name of the file to open.
         String file = "groups.txt";
@@ -34,8 +34,3 @@ public class FileWriter
         	}
     	}
 	}
-
-    © 2022 GitHub, Inc.
-
-    Terms
-    Privacy
