@@ -8,7 +8,6 @@ public class Filler
 	
 		public static void makeProjectOneGroups()
 			{
-				ArrayList <Student> group1 = new ArrayList <Student>();
 				 
 				int count =0;
 			
@@ -18,21 +17,55 @@ public class Filler
 		  			{
 		  					fillingStudentNames.studentNames.get(count).setProjectOneGroup(j+1);
 		  					count++;
-		  			}
-				
-		  			
+		  			}		
 					}
 				
 				for(Student s: fillingStudentNames.studentNames)
 					{
 						System.out.println(s.getProjectOneGroup());
 						System.out.println(s.getName() + "\n");
-						
-					}
-					
+					}	
+				
+			
 			}
+		
+		public static void makeProjectTwoGroups()
+			{
 
-	
+				 
+				int count =0;
+				
+				int count2  = 0;
+				
+				int groupCount = fillingStudentNames.studentNames.size()/driver.medianSize;
+				
+				
+				
+				
+				for(int i =0; i<fillingStudentNames.studentNames.size(); i++)
+					{
+						fillingStudentNames.studentNames.get(groupCount).setProjectTwoGroup(count2);
+						
+						count ++;
+						
+						if(count == 4)
+							{
+								count =0;
+								count2++;
+								groupCount--;
+							}
+					}
+			
+
+				
+				for(Student s: fillingStudentNames.studentNames)
+					{
+						System.out.println(s.getProjectTwoGroup());
+						System.out.println(s.getName() + "\n");
+					}	
+			}
+		
+		
 	}
 
 

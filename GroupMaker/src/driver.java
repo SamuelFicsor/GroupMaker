@@ -25,6 +25,8 @@ public class driver
 				//the method that will generate groups goes here 
 				
 				Filler.makeProjectOneGroups();
+				System.out.println("\n\n\n");
+				Filler.makeProjectTwoGroups();
 			}
 	}
 
