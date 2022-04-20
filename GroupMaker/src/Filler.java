@@ -20,13 +20,6 @@ public class Filler
 		  			}		
 					}
 				
-//				for(Student s: fillingStudentNames.studentNames)
-//					{
-//						System.out.println(s.getProjectOneGroup());
-//						System.out.println(s.getName() + "\n");
-//					}	
-				
-			
 			}
 		
 		public static void makeProjectTwoGroups()
@@ -56,13 +49,22 @@ public class Filler
 						
 					}
 			
-
+			}
+		
+		public static void makeProjectThreeGroups()
+			{
+				int count = fillingStudentNames.studentNames.size()/driver.medianSize;;
 				
-//				for(Student s: fillingStudentNames.studentNames)
-//					{
-//						System.out.println(s.getProjectTwoGroup());
-//						System.out.println(s.getName() + "\n");
-//					}	
+				int count2 = count;
+				
+				for(Student s: fillingStudentNames.studentNames)
+					{
+						int i = (int) (Math.random() + 1) * count2;
+						
+						s.setProjectThreeGroup(i);
+					}
+				
+				
 			}
 		
 		
